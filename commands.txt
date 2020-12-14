@@ -1,0 +1,23 @@
+1. curl -XPUT -i -H "Content-Type:application/json" -d '{"name":"Hikmat", "age":24, "score":10.0, "hobby":"sports", "occupation":"student"}' http://localhost:8090/buckets/s22217/keys/person1
+curl -XPUT -i -H "Content-Type:application/json" -d '{"name":"Ali", "age":23, "score":8.5, "hobby":"chess", "occupation":"programmer"}' http://localhost:8090/buckets/s22217/keys/person2
+curl -XPUT -i -H "Content-Type:application/json" -d '{"name":"Nick","age":20, "score":10.0, "hobby":"online games", "occupation":"student"}' http://localhost:8090/buckets/s22217/keys/person3
+curl -XPUT -i -H "Content-Type:application/json" -d '{"name":"Sherzod","age":24, "score":10.0, "hobby":"tennis", "occupation":"data analyst"}' http://localhost:8090/buckets/s22217/keys/person4
+curl -XPUT -i -H "Content-Type:application/json" -d '{"name":"Dilafruz","age":25, "score":10.0, "hobby":"reading", "occupation":"financial analyst"}' http://localhost:8090/buckets/s22217/keys/person5
+
+2. curl -i  http://localhost:8090/buckets/s22217/keys/person1
+
+3. curl -XPUT -i -H "Content-Type:application/json" -d '{"name":"Hikmat", "age":24, "score":10.0, "hobby":"sports", "occupation":"iOS developer", "salary":10000}' http://localhost:8090/buckets/s22217/keys/person1
+
+4. curl -XPUT -i -H "Content-Type:application/json" -d '{"name":"Hikmat", "age":24, "score":10.0, "hobby":"sports", "occupation":"iOS developer"}' http://localhost:8090/buckets/s22217/keys/person1
+
+5. curl -XPUT -i -H "Content-Type:application/json" -d '{"name":"Hikmat", "age":24, "score":10.0, "hobby":"swimming", "occupation":"iOS developer"}' http://localhost:8090/buckets/s22217/keys/person1
+
+6. curl -XDELETE -i http://localhost:8090/buckets/s22217/keys/person1
+
+7. curl -i  http://localhost:8090/buckets/s22217/keys/person1
+
+8. curl -XPOST -i -H "Content-Type:application/json" -d '{"name":"Sherlock"}' http://localhost:8090/buckets/s22217/keys
+
+9. curl -i  http://localhost:8090/buckets/s22217/keys/9QszTCQnVbP4ji9l7uqOoGI1lp
+
+10. curl -XDELETE -i  http://localhost:8090/buckets/s22217/keys/9QszTCQnVbP4ji9l7uqOoGI1lp
